@@ -1,0 +1,20 @@
+{
+  "name": "Fantasy Points for FanGraphs",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Enrich existing player standard stats table on FanGraphs website with additional columns calculating fantasy baseball points (personal league format)",
+  "icons": {
+	  "16": "flat_fg_green.png",
+	  "32": "flat_fg_green.png",
+	  "48": "flat_fg_green.png",
+	  "128": "flat_fg_green.png"
+  },
+  "permissions": ["activeTab", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.fangraphs.com/players/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
