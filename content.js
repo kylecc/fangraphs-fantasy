@@ -9,7 +9,7 @@ window.addEventListener("load", function () {
 	}
 });
 
-function isPlayerBatter(doc) {
+function isPlayerBatter(_doc) {
     const menuItem = document.querySelector(".menu-mega__menu-item.highlight");
     const playerType = menuItem.firstChild.firstChild.textContent;
     return 'Batting' === playerType;
